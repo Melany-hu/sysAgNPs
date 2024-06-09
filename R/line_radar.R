@@ -11,7 +11,7 @@
 #' @importFrom ggpubr ggarrange
 #' @importFrom patchwork wrap_plots
 #' @export
-#' @examples sysAgNPs_score_radar <- line_radar(sysAgNPs_score, 10, "sysAgNPs_score_radar/")
+#' @examples sysAgNPs_line_radar <- line_radar(sysAgNPs_score, 10, "sysAgNPs_line_radar/")
 line_radar <- function(sysAgNPs_score, num_plots, output_directory) {
 
   # Transpose the data frame for drawing line plots
