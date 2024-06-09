@@ -1,4 +1,4 @@
-#' @title Build transition score criteria.
+#' @title Build Transition Scores criteria
 #' @description This function evaluates the criteria for a binary dataset by calculating the transfer probability matrix and iterating to obtain the transfer probability vector.
 #'
 #' @param binary_dataset A binary dataframe of datasets used to establish evaluation criteria.

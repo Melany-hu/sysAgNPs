@@ -1,6 +1,6 @@
-#' Calculate transfer probability matrix
+#' Calculate transition probability matrix
 #'
-#' @param binary_dataset A binary dataframe of datasets used to establish evaluation criteria.
+#' @param binary_dataset A binary dataframe of datasets used to establish Transition Scores criteria.
 #' @importFrom purrr map
 #' @return A transfer probability matrix.
 #' @export

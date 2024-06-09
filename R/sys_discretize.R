@@ -1,4 +1,4 @@
-#' Convert categorical variables into discrete variables.
+#' Convert categorical variables into discrete variables
 #'
 #' @param dataset A dataframe of dataset. Datasets used to establish evaluation criteria.
 #' @param vars_to_discretize Variables or columns to be discretized. Default is NULL.
