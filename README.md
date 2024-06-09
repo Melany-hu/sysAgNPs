@@ -71,8 +71,9 @@ sysAgNPs_score <- data.frame(DE = DE$H_pE,
 rio::export(sysAgNPs_score, "sysAgNPs_score.xlsx")
 
 # Line and radar plots of sysAgNPs score                            
-sysAgNPs_line_radar <- line_radar(sysAgNPs_score, 1, "sysAgNPs_line_radar/")
-sysAgNPs_line_radar
+sysAgNPs_line_radar_1 <- line_radar(sysAgNPs_score, 1, "sysAgNPs_line_radar/")
+# sysAgNP1
+sysAgNPs_line_radar_1
 ```
 ![](man/figures/sysAgNP1.png)<!-- -->
 
