@@ -20,5 +20,5 @@ A \code{ggplot} object.
 Line and Radar Plot of sysAgNPs score
 }
 \examples{
-sysAgNPs_score_radar <- line_radar(sysAgNPs_score, 10, "sysAgNPs_score_radar/")
+sysAgNPs_line_radar <- line_radar(sysAgNPs_score, 10, "sysAgNPs_line_radar/")
 }

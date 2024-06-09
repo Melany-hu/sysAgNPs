@@ -2,18 +2,18 @@
 % Please edit documentation in R/sys_tran.R
 \name{sys_tran}
 \alias{sys_tran}
-\title{Calculate transfer probability matrix}
+\title{Calculate transition probability matrix}
 \usage{
 sys_tran(binary_dataset)
 }
 \arguments{
-\item{binary_dataset}{A binary dataframe of datasets used to establish evaluation criteria.}
+\item{binary_dataset}{A binary dataframe of datasets used to establish Transition Scores criteria.}
 }
 \value{
 A transfer probability matrix.
 }
 \description{
-Calculate transfer probability matrix
+Calculate transition probability matrix
 }
 \examples{
 tran_matrix <- sys_tran(binary_dataset)

@@ -2,7 +2,7 @@
 % Please edit documentation in R/sys_discretize.R
 \name{sys_discretize}
 \alias{sys_discretize}
-\title{Convert categorical variables into discrete variables.}
+\title{Convert categorical variables into discrete variables}
 \usage{
 sys_discretize(dataset, vars_to_discretize = NULL)
 }
@@ -15,7 +15,7 @@ sys_discretize(dataset, vars_to_discretize = NULL)
 A binary dataframe.
 }
 \description{
-Convert categorical variables into discrete variables.
+Convert categorical variables into discrete variables
 }
 \examples{
 dis_data <- sys_discretize(dataset, c("Shape", "pH"))

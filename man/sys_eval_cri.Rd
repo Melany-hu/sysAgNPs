@@ -2,7 +2,7 @@
 % Please edit documentation in R/sys_eval_cri.R
 \name{sys_eval_cri}
 \alias{sys_eval_cri}
-\title{Build transition score criteria.}
+\title{Build Transition Scores criteria}
 \usage{
 sys_eval_cri(binary_dataset, n_iter, vars_to_discretize = NULL)
 }
