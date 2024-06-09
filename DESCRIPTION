@@ -1,0 +1,27 @@
+Package: sysAgNPs
+Title: Systematic quantification of AgNPs to unleash their potential for applicability
+Version: 0.0.9
+Authors@R: 
+    c(person("Jiamin", "Hu", , "jiamin-hu@hotmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-3030-2117")),
+    person("Longfei","Mao",email = "longfeimao99@gmail.com",role = c("aut","cph"),comment = c(ORCID = "0000-0003-0759-0501")),
+    person("Xiting","Wang",email = "XitingWang2023@hotmail.com",role = c("ctb"), comment = c(ORCID = "0009-0009-5235-0006"))
+    )
+Description: The synthesis of AgNPs can be achieved through various approaches, including physical, chemical, and biological synthesis methods. Different synthesis conditions, such as the types of reducing and stabilizing agents, pH and temperature, significantly influence the size, shape, and other characteristics of AgNPs. Additionally, there is variation across AgNPs due to differences in characterization techniques and testing metrics employed in studies. To solve this problem, we developed a systematic evaluation framework termed “sysAgNPs”. This framework employs Distribution Entropy (DE) to measure the uncertainty of AgNPs' feature categories, Proclivity Entropy (PE) to assess the preference of these categories, and Combination Entropy (CE) to quantify the uncertainty of AgNPs' feature combinations. The framework employs a Markov chain model to examine the relationships among the subfeatures of AgNPs and determines a Transition Score (TS) scoring standard that is dependent on steady-state probability. This makes it possible to clearly define and categorize AgNPs that are produced using diverse processes and conditions and that are characterized by a range of indications. The sysAgNPs framework provides a metrics for evaluating AgNPs, which aids in unraveling their complexity and facilitates effective comparisons among different AgNPs, thereby advancing the scientific research and application of AgNPs.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+URL:
+Import: 
+    dplyr,
+    expm,
+    ggplot2,
+    ggpubr,
+    ggradar,
+    magrittr,
+    patchwork,
+    purrr,
+    rio,
+    tibble,
+    tidyr
