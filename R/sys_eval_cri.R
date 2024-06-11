@@ -119,7 +119,6 @@ sys_eval_cri <- function(binary_dataset, n_iter, vars_to_discretize = NULL) {
     colnames(eval) <- eval[1,]
     eval <- eval[-1,]
     rownames(eval) <- "Score"
-    rio::export(eval,"evaluation_criteria.xlsx")
 
     return(eval)
   }

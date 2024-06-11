@@ -1,5 +1,5 @@
 #' @title Calculate the Proclivity Entropy
-#' @description Calculate the average value of the probability of surprising level of the  presence and absence of a particular category within the specific category to measure the average uncertainty of feature categories
+#' @description Measure the preference of feature categories.
 #'
 #' @param data A dataframe that contains experimental data.
 #' @importFrom dplyr %>% bind_rows mutate

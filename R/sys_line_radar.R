@@ -4,15 +4,15 @@
 #' @param num_plots The range of the graph to be output and saved can be a vector or a single value.
 #' @param output_directory Directory where the plots will be saved.
 #' @return A `ggplot` object.
-#' @importFrom ggplot2 ggplot aes geom_line geom_point geom_text scale_color_manual labs scale_y_continuous theme_bw theme element_text ggsave
+#' @importFrom ggplot2 ggplot aes geom_line geom_point geom_text position_nudge scale_color_manual labs scale_y_continuous theme_bw theme element_text ggsave
 #' @importFrom dplyr mutate select
 #' @importFrom tibble as_tibble
 #' @importFrom ggradar ggradar
 #' @importFrom ggpubr ggarrange
 #' @importFrom patchwork wrap_plots
 #' @export
-#' @examples sysAgNPs_line_radar <- line_radar(sysAgNPs_score, 10, "sysAgNPs_line_radar/")
-line_radar <- function(sysAgNPs_score, num_plots, output_directory) {
+#' @examples sysAgNPs_line_radar <- sys_line_radar(sysAgNPs_score, 10, "sysAgNPs_line_radar/")
+sys_line_radar <- function(sysAgNPs_score, num_plots, output_directory) {
 
   # Transpose the data frame for drawing line plots
   sysAgNPs_score_line <- as.data.frame(t(sysAgNPs_score))

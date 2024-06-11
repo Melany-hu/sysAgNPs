@@ -12,7 +12,7 @@ install.packages("sysAgNPs")
 
 # Or the development version from GitHub:
 install.packages("devtools")
-devtools::install_github("Melany-hu-sysAgNPs")
+devtools::install_github("Melany-hu/sysAgNPs")
 ```
 
 ## How to use sysAgNPs to evaluate AgNPs data
@@ -40,7 +40,9 @@ tol_iter <- sys_steady(dis_data, tran_matrix)
 iter_prob <- sys_iter(dataset, 6, var_dis)
 
 # Export the Transition Score criteria
-criteria <- sys_eval_cri(dataset, 6, var_dis)
+TS_criteria <- sys_eval_cri(dataset, 6, var_dis)
+# Save Transition Score criteria
+rio::export(TS_criteria,"TS_criteria.xlsx")
 ```
 
 ### Evaluate the experimental data of AgNPs
@@ -59,19 +61,19 @@ PE <- sys_PE(users_data)
 CE <- sys_CE(users_data, dataset)
 
 # Transition score
-ts_score <- sys_TS(users_data, dataset, 6, var_dis)
+TS <- sys_TS(users_data, dataset, 6, var_dis)
 
 # sysAgNPs score of AgNPs (DE, PE, CE, TS)
-sysAgNPs_score <- data.frame(DE = DE$H_pE,
+sysAgNPs_score <- data.frame(DE = DE$H_pB,
                              PE = PE$H_pK,
-                             CE = CE$H_pB,
-                             TS = ts_score$TS)
+                             CE = CE$H_pE,
+                             TS = TS$TS)
 
 # Save sysAgNPs score results
 rio::export(sysAgNPs_score, "sysAgNPs_score.xlsx")
 
 # Line and radar plots of sysAgNPs score                            
-sysAgNPs_line_radar_1 <- line_radar(sysAgNPs_score, 1, "sysAgNPs_line_radar/")
+sysAgNPs_line_radar_1 <- sys_line_radar(sysAgNPs_score, 1, "sysAgNPs_line_radar/")
 # sysAgNP1
 sysAgNPs_line_radar_1
 ```
