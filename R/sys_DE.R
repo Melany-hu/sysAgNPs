@@ -4,7 +4,7 @@
 #' @importFrom dplyr %>% bind_rows mutate
 #' @importFrom tibble tibble
 #' @importFrom purrr map
-#' @impotrFrom tibble tibble
+#' @importFrom tibble tibble
 #' @return A dataframe including 1. the number of feature in a certain category; 2. the total number of features in the sample; 3.  the average value to measure the average uncertainty of feature categories
 #' @export
 #'

@@ -10,11 +10,12 @@ sys_DE(data)
 \item{data}{A dataframe that contains experimental data.}
 }
 \value{
-A dataframe including 1. the number of feature in a certain category; 2. the total number of features in the sample; 3. the expected value to measure the average description level across different feature categories.
+A dataframe including 1. the number of feature in a certain category; 2. the total number of features in the sample; 3.  the average value to measure the average uncertainty of feature categories
 }
 \description{
-Calculate the average value of the probability of surprising level of the  presence and absence of a particular category within the specific category to measure the average uncertainty of feature categories
+Measure the distribution variability of the presence and absence of feature categories.
 }
 \examples{
 DE = sys_DE(users_data)
+
 }
