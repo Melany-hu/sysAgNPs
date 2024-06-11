@@ -3,7 +3,7 @@
 #'
 #' @param data A dataframe that contains experimental data.
 #' @param dataset The dataset used to to calculate the ratio of the number of reporting a certain feature in the AgNPs dataset to the total number of samples.
-#' @importFrom dplyr %>% rowwise mutate
+#' @importFrom dplyr %>% rowwise mutate mutate_all c_across
 #' @importFrom purrr map
 #' @importFrom tibble tibble
 #' @return A dataframe including: 1. the ratio of the number of reporting a certain feature in the AgNPs dataset to the total number of samples; 2. pc:the probability of the feature combination occurring; 3. Hi:the probability of surprising level of the presence and absence of feature combinations to measure the uncertainty of feature combination.

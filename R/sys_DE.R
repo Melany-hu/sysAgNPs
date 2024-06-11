@@ -1,7 +1,7 @@
 #' @title Calculate the Distribution Entropy
 #' @description Measure the distribution variability of the presence and absence of feature categories.
 #' @param data A dataframe that contains experimental data.
-#' @importFrom dplyr %>% bind_rows mutate
+#' @importFrom dplyr %>% bind_rows mutate mutate_all
 #' @importFrom tibble tibble
 #' @importFrom purrr map
 #' @importFrom tibble tibble

@@ -5,6 +5,7 @@
 #' @param n_iter The number of iterations to reach the steady state.
 #' @param vars_to_discretize Variables or columns to be discretized. Default is NULL.
 #' @importFrom rio import export
+#' @importFrom dplyr arrange
 #' @return A dataframe that contains sysAgNPs scores.
 #' @export
 #'

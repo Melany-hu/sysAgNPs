@@ -2,7 +2,7 @@
 #' @description Measure the preference of feature categories.
 #'
 #' @param data A dataframe that contains experimental data.
-#' @importFrom dplyr %>% bind_rows mutate
+#' @importFrom dplyr %>% bind_rows mutate mutate_all
 #' @importFrom tibble tibble
 #' @importFrom purrr map
 #' @importFrom tibble tibble

@@ -42,7 +42,6 @@ sys_eval_cri <- function(binary_dataset, n_iter, vars_to_discretize = NULL) {
     eval <- M_n %>%
       as.data.frame()
     rownames(eval) <- "Score"
-    rio::export(eval,"evaluation_criteria.xlsx")
 
     return(eval)
 
@@ -116,6 +115,8 @@ sys_eval_cri <- function(binary_dataset, n_iter, vars_to_discretize = NULL) {
       select(feature, sum_score) %>%
       t() %>%
       as.data.frame()
+
+    # Transform to numeric
     colnames(eval) <- eval[1,]
     eval <- eval[-1,]
     rownames(eval) <- "Score"
