@@ -85,9 +85,9 @@ sys_eval_cri <- function(binary_dataset, n_iter, vars_to_discretize = NULL) {
 
       map_dfr(function(splitted_df) {
 
-        # Sort each tibble in descending order by score.
+        # Sort each tibble in ascending order by score.
         splitted_df = splitted_df %>%
-          arrange(-desc(score))
+          arrange(score)
 
         # Pull the score for totalization.
         sum_score = splitted_df %>%
