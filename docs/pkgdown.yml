@@ -2,8 +2,5 @@ pandoc: 3.1.11
 pkgdown: 2.0.9
 pkgdown_sha: ~
 articles: {}
-last_built: 2024-06-09T11:17Z
-urls:
-  reference: https://Melany-hu.github.io/sysAgNPs/reference
-  article: https://Melany-hu.github.io/sysAgNPs/articles
+last_built: 2024-06-14T04:58Z
 

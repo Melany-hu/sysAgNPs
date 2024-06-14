@@ -1,6 +1,4 @@
-url: https://Melany-hu.github.io/sysAgNPs/
-
+url: ~
 template:
   bootstrap: 5
 
-on: push
