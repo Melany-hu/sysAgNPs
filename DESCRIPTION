@@ -23,4 +23,5 @@ Imports:
     purrr,
     rio,
     tibble,
-    tidyr
+    tidyr,
+    rlang

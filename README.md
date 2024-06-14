@@ -13,6 +13,9 @@ install.packages("sysAgNPs")
 # Or the development version from GitHub:
 install.packages("devtools")
 devtools::install_github("Melany-hu/sysAgNPs")
+
+# Load sysAgNPs
+library(sysAgNPs)
 ```
 
 ## How to use sysAgNPs to evaluate AgNPs data
@@ -61,13 +64,13 @@ PE <- sys_PE(users_data)
 CE <- sys_CE(users_data, dataset)
 
 # Transition score
-TS <- sys_TS(users_data, dataset, 6, var_dis)
+T_S <- sys_TS(users_data, dataset, 6, var_dis)
 
 # sysAgNPs score of AgNPs (DE, PE, CE, TS)
 sysAgNPs_score <- data.frame(DE = DE$H_pB,
                              PE = PE$H_pK,
                              CE = CE$H_pE,
-                             TS = TS$TS)
+                             TS = T_S$TS)
 
 # Save sysAgNPs score results
 rio::export(sysAgNPs_score, "sysAgNPs_score.xlsx")

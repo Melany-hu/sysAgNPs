@@ -9,6 +9,7 @@
 #' @importFrom tibble as_tibble
 #' @importFrom ggradar ggradar
 #' @importFrom ggpubr ggarrange
+#' @importFrom rlang sym
 #' @importFrom patchwork wrap_plots
 #' @export
 #' @examples sysAgNPs_line_radar <- sys_line_radar(sysAgNPs_score, 10, "sysAgNPs_line_radar/")
