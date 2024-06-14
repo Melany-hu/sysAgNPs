@@ -172,7 +172,7 @@ sys_line_radar <- function(sysAgNPs_score, num_plots, output_directory) {
   # Save images
   for (i in seq_along(selected_plots)) {
     # Image name to be saved
-    file_name <- paste0("LR", selected_indices[i], ".png")
+    file_name <- paste0("sysAgNP", selected_indices[i], ".png")
     # Save path
     file_path <- file.path(output_directory, file_name)
     ggsave(file = file_path,
