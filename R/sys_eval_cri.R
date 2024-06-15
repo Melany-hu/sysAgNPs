@@ -108,7 +108,7 @@ sys_eval_cri <- function(binary_dataset, n_iter, vars_to_discretize = NULL) {
 
     # Three decimal places are reserved.
     result_add_score$sum_score %<>%
-      round(3)
+      round(4)
 
     # Export the evaluation criteria.
     eval <- result_add_score %>%

@@ -59,6 +59,7 @@ sys_TS <- function(data, dataset, n_iter, vars_to_discretize){
   }
 
   data$`TS` <- as.numeric(data$`TS`)
+  data$`TS` <- round(data$`TS`, 3)
   # Return dataframe that contains score value of AgNPs
   return(data)
 }
